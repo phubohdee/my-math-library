@@ -4,8 +4,11 @@ function sum(a, b){
         // for (let i = 0 ; i < a.length ; i++){
         //     total += a[i]
         // }
-        a.forEach((n) => (total += n))
-        return total
+
+        // a.forEach((n) => (total += n))
+        // return total
+
+        return a.reduce((total, n) => total + n, 0)
     }
     return a + b;
 }
